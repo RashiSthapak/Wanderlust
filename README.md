@@ -30,19 +30,7 @@
 - **Templating**: EJS with custom layouts using `ejs-mate`
 - **Deployment**: Render
 
-🗂 Folder Structure
-├── models/         # User, Listing, Review schemas
-├── routes/         # All Express routes
-├── controllers/    # Route logic separated from routes
-├── views/          # EJS templates for UI
-├── public/         # Static assets (CSS, JS, etc.)
-├── utils/          # Cloudinary, Mapbox, Validation
-├── middleware/     # Auth & error middleware
-├── app.js          # Main server entry point
-└── .env            # Environment variables
-
-##🔌 API Endpoints Overview
-🧑 Authentication
+Authentication---->
 
 Method	Route	Description
 POST	/register	Register new user
@@ -55,7 +43,6 @@ GET	/logout	Log out current user
 To run this project locally:
 
 1️⃣Clone the repository
-
    ```bash
    git clone https://github.com/RashiSthapak/wanderlust.git
    cd wanderlust
