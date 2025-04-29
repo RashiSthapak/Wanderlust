@@ -30,12 +30,54 @@
 - **Templating**: EJS with custom layouts using `ejs-mate`
 - **Deployment**: Render
 
+🗂 Folder Structure
+├── models/         # User, Listing, Review schemas
+├── routes/         # All Express routes
+├── controllers/    # Route logic separated from routes
+├── views/          # EJS templates for UI
+├── public/         # Static assets (CSS, JS, etc.)
+├── utils/          # Cloudinary, Mapbox, Validation
+├── middleware/     # Auth & error middleware
+├── app.js          # Main server entry point
+└── .env            # Environment variables
+
+##🔌 API Endpoints Overview
+🧑 Authentication
+
+Method	Route	Description
+POST	/register	Register new user
+POST	/login	Log in user
+GET	/logout	Log out current user
+
+
 ## 🛠️ Installation & Setup
 
 To run this project locally:
 
-1. **Clone the repository**:
+1️⃣Clone the repository
 
    ```bash
    git clone https://github.com/RashiSthapak/wanderlust.git
    cd wanderlust
+
+2️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+
+3️⃣ Create a .env File
+Create a .env file in the root directory with the following content:
+
+4️⃣ Setup External Services
+MongoDB Atlas – Create a database and get the connection string
+
+Cloudinary – Set up an account and get your API keys
+
+5️⃣ Start the Application
+bash
+Copy
+Edit
+
+npm run dev
+Visit: http://localhost:8080
